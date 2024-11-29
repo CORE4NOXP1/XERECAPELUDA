@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class= "passo ativo" id="passo-0">
+      <img src="logo.png">
+      <p> A noite está pesada, encoberta por uma névoa densa e fria que envolve o ambiente em uma penumbra profunda. Você se encontra em frente a uma mansão antiga, uma construção decadente, cercada por árvores retorcidas e uma cerca enferrujada que range ao menor toque do vento. Suas janelas estão estilhaçadas, e as paredes, descascadas e cobertas de musgo, sugerem que aquele lugar está abandonado há muito tempo. No entanto, há uma estranha sensação de presença, como se algo ou alguém estivesse observando.Seu coração bate acelerado, mas algo te impulsiona a continuar. Uma sensação que mistura medo com uma curiosidade avassaladora. Com uma lanterna em mãos, você se aproxima da entrada, onde vê duas portas desgastadas. Ambas parecem ter sido pintadas com cores que o tempo já apagou quase por completo, restando apenas a madeira envelhecida. Há um silêncio incômodo, quebrado apenas pelo som do vento, que parece sussurrar ao seu ouvido. </p>
+      <button class="proximo" data-proximo="1">Entrar pela porta da esquerda, ligeiramente entreaberta. Uma névoa azulada escapa por debaixo da porta, criando uma atmosfera espectral. </button>
+        
+        <button class="proximo" data-proximo="2">Entrar pela porta da direita, completamente fechada, de onde se ouvem rangidos, como se algo pesado estivesse se movendo lá dentro. </button>
+      </div>
+      
+      <div class="passo" id="passo-1">
+      <img src="logo.png">
+      <p>
+Você decide entrar pela porta da esquerda. Ao empurrá-la, sente uma resistência, como se a porta relutasse em abrir. Com um rangido prolongado, ela se abre revelando um corredor longo e escuro. As paredes estão cobertas por manchas de umidade e desenhos misteriosos esculpidos no reboco. Cada passo ecoa em um silêncio pesado, e a luz fraca da lanterna mal consegue penetrar a escuridão à frente.
+Ao final do corredor, você avista duas novas portas, cada uma com inscrições em latim gravadas na madeira envelhecida. A primeira porta, à sua esquerda, ostenta a frase: "Lux in Tenebris" ("Luz na Escuridão"). A segunda, à direita, diz "Umbra Mortis" ("Sombra da Morte").
+      </p>
+      
+      <button class="proximo" data-proximo="3">Escolher a porta com a inscrição "Lux in Tenebris". Aparentemente, algo a protege, e um leve brilho emana de sua fresta.
+      </button>
+      
+      <button class="proximo" data-proximo="4">Escolher a porta com a inscrição "Umbra Mortis". A porta parece suja e gasta, e você sente um calafrio sempre que olha para ela.
+      </button>
+     </div>
+      
+      <div class="passo" id="passo-2">
+      <img src="logo.png">
+      <p>
+      Optando pela porta da direita, você a empurra com força, e ela cede com um estalo violento, revelando uma sala ampla, iluminada por uma luz pálida e trêmula. O chão é coberto por um tapete gasto, manchado de algo que parece sangue seco. No centro da sala, há uma mesa antiga de carvalho, onde repousam alguns objetos curiosos: um candelabro enferrujado, um relógio quebrado marcando meia-noite, e duas pequenas caixas cobertas de poeira.
+Ao olhar mais de perto, percebe que cada uma das caixas possui um símbolo diferente. Uma delas tem a figura de um corvo, gravada com perfeição. A outra exibe um símbolo de um espelho, com pequenos fragmentos de vidro colados, refletindo sua imagem distorcida.
+      </p>
+      
+        <button class="proximo" data-proximo="5">Abrir a caixa com o símbolo do corvo. Ela emite um leve sussurro, como se quisesse revelar segredos antigos.
+        </button>
+        
+        <button class="proximo" data-proximo="6">Abrir a caixa com o símbolo do espelho. Seus fragmentos brilham levemente à luz, e você sente como se algo estivesse se movendo dentro dela.
+        </button>
+      </div>
+      
+      <div class="passo" id="passo-3">
+      <img src="logo.png">
+      <p>
+      Com coragem, você escolhe a porta marcada com a inscrição "Lux in Tenebris". Ao girar a maçaneta, uma luz pálida preenche o ambiente, e você entra em um salão onde uma antiga tapeçaria cobre a parede principal. A tapeçaria ilustra um ritual misterioso, onde figuras encapuzadas seguram velas em volta de uma chama azul flutuante. Estranhamente, ao se aproximar, a chama parece ganhar vida, movendo-se ao ritmo de sua respiração.
+Ao se virar, percebe duas escadas em lados opostos da sala: uma leva a um andar superior, enquanto a outra desce para o porão.
+      </p>
+      
+        <button class="proximo" data-proximo="9">Subir a escada que leva ao andar superior, onde um fraco som de piano parece ecoar, mesmo sem ninguém tocando.
+        </button>
+        
+        <button class="proximo" data-proximo="10">Descer a escada que leva ao porão, de onde emana um odor terrível, misto de enxofre e algo apodrecido.
+        </button>
+      </div>
+      
+      <div class="passo" id="passo-4">
+      <img src="ganhou.png">
+      <p>
+      Ao optar pela porta "Umbra Mortis", você sente um arrepio correr pela espinha. Ao empurrar a porta, ela se abre revelando uma sala pequena e iluminada apenas por uma vela no canto. No centro da sala, há uma caixa aberta com uma chave dentro, que parece antiga e desgastada. Uma voz sussurra em sua mente: "A chave da libertação".
+Você se aproxima e pega a chave. Ao segurá-la, uma onda de alívio percorre seu corpo, e você ouve um estalo à distância. A porta principal da casa está destrancada, permitindo que você saia com vida e tenha vencido a misteriosa jornada.  
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+        Reiniciar?
+        </button>
+        
+      </div>
+      
+      <div class="passo" id="passo-5">
+      <img src="logo.png">
+      <p>
+      Você abre a caixa com o símbolo do corvo, e uma fumaça negra e espessa começa a sair. Ela forma lentamente a figura de uma mulher de olhos sombrios e um sorriso macabro. Antes que você possa recuar, a figura se dissolve, deixando um anel negro e frio no fundo da caixa. Você pega o anel hesitante, e, ao colocá-lo no dedo, sente uma força desconhecida envolvendo seu corpo.
+De repente, duas portas surgem nas paredes da sala, ambas parecendo antigas e misteriosas.
+      </p>
+      
+        <button class="proximo" data-proximo="7">Entrar pela porta à esquerda, com uma inscrição indecifrável gravada.
+        </button>
+        
+        <button class="proximo" data-proximo="8">Entrar pela porta à direita, onde um leve som de água corrente pode ser ouvido.
+        </button>
+      </div>
+      
+      <div class="passo" id="passo-6">
+      <img src="perdeu.png">
+      <p>
+       Decidindo abrir a caixa com o símbolo do espelho, você se depara com um reflexo de si mesmo, mas algo está errado. Seu reflexo começa a sorrir de uma forma distorcida, enquanto você sente um frio insuportável tomar conta de você. A imagem então se fragmenta, e uma risada sombria ecoa em sua mente.
+De repente, tudo escurece, e você sente seu corpo ser puxado para uma escuridão infinita.
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+         Reiniciar?
+        </button>
+      
+      </div>
+      
+      <div class="passo" id="passo-7">
+      <img src="ganhou.png">
+      <p>
+       Ao atravessar a porta da esquerda, você é recebido por uma sala adornada com velas douradas que iluminam a área. Em um pedestal, há um livro antigo e empoeirado. Ao abrir o livro, você percebe que ele contém palavras de proteção e sabedoria. Ao ler as primeiras linhas, uma luz dourada te envolve, e você sente que conseguiu escapar do mal que habitava a casa.
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+          Reiniciar?
+        </button>
+      
+      </div>
+      
+      <div class="passo" id="passo-8">
+      <img src="perdeu.png">
+      <p>
+      Após experimentar uma visão estranha, você é misteriosamente transportado de volta à entrada do corredor com as inscrições em latim, "Lux in Tenebris" e "Umbra Mortis".
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+          Reiniciar?
+        </button>
+      </div>
+      
+      <div class="passo" id="passo-9">
+      <img src="ganhou.png">
+      <p>
+       Você sobe as escadas em direção ao andar superior, onde o som do piano fica cada vez mais forte. Ao entrar no salão, encontra um velho senhor tocando uma melodia melancólica, embora esteja com os olhos fechados e uma expressão vazia. Ele te olha e murmura: “Apenas os que escutam o chamado podem sair com vida”. Antes que você consiga responder, ele te entrega uma chave de ouro.
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+          Reiniciar?
+        </button>
+        
+      </div>
+      
+      <div class="passo" id="passo-10">
+      <img src="perdeu.png">
+      <p>
+      Descendo as escadas, o odor no porão se torna cada vez mais insuportável. Você tenta retornar, mas a porta se fecha violentamente atrás de você. De repente, mãos geladas começam a surgir das sombras, puxando você para a escuridão.
+      </p>
+      
+        <button class="proximo" data-proximo="0">
+          Reiniciar?
+        </button>
+      </div>
+      
+    </main>
+  <script src="sketch.js"></script>
+    
+<footer>
+<p> Project made by <a href="https://github.com/CORE4NOXP"> Júlio César de Paula Barboza </a> </p> </footer>
+</body>
+</html>
+
